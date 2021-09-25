@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+import Link from 'next/link'
+import { getAllFilesMetadata } from '../lib/mdx'
+
+export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -20,12 +23,20 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
+        {/* Esta es la manera en que estamos mapeando */}
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          {posts.map((post) => (
+            <Link 
+              key={post.slug} 
+              href={`${post.slug}`} 
+              className={styles.card}
+            >
+              <a>
+                <h2>{post.title}</h2>
+                <p>{post.date}</p>
+              </a>
+            </Link>
+          ))}
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
@@ -66,4 +77,13 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const posts = await getAllFilesMetadata();
+  console.log(posts); 
+
+  return {
+    props: { posts },
+  };
 }
