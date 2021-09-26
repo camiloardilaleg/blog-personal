@@ -1,8 +1,9 @@
 import { MDXRemote } from "next-mdx-remote"; // Esta herramienta convierte el codigo en `source` en codigo JSX para despues convertirlo a HTML
 import { getFileBySlug, getFiles } from "../lib/mdx"
+import MDXComponents from "../components/MDXComponents";
 
 export default function Post({ source, frontmatter }){
-    return <MDXRemote {...source}/> // aqui convierte el codigo de source a LOS COMPONENTES
+    return <MDXRemote {...source} components={MDXComponents} /> // aqui convierte el codigo de source a LOS COMPONENTES
 }
 
 /* En este momento, cualquier direccion que tipeemos da como resultado `Post` */
