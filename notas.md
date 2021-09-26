@@ -115,3 +115,56 @@ export async function getStaticProps() {
   };
 }
 ```
+
+# NextJs: parametros o rutas dinamicas
+
+Para indicarle a NextJs que las rutas van a ser dinamicas, el archivo debemos escribirlo de la siguiente manera **[nombre_archivo].js**. Con esto, NextJs sabe que es dinamico.
+
+# React: ententer los parametros, los props y manera de jugar con los nombres de parametros
+
+Cuando estamos aprendiendo react, vemos que utilizamos la pababra props para casi todo. Cuando creamos un componente, podemos tener `n` numero de parametros, por ejemplo, name, edad, place, etc. Dentro del componente lo definimos como `props.name`, `props.edad` y `props.place`
+
+Un componente uzando al estructura de funcion tiene el siguiente aspecto
+
+```js
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+Y para utilizar el componente, utilizamos lo siguiente:
+
+```js
+const element = <Welcome name="Sara" />;
+```
+Para entender esto, debemos pensar en `props` como un objecto que almacena los parametros que realmente vamos a utilizar, es este caso `name`. Asi:
+```js
+props = {
+  name: "sara"
+}
+```
+Ahora bien, *existe otra manera de hacer lo mismo, pero sin utilizar los `props`*. Y es de la siguiente manera:
+
+```js
+function Greeting( {saludo} ){
+  return <h1> Hola, {saludo} </h1>
+}
+// cnst Greeting = ({ saludo }) => <h1>{saludo}</h1>;
+const element = <Greeting saludo="Sara Ardila" />;
+```
+Como se puede ver, no es necesario parar el objeto props, si no, directamente las variables que necesitamos, que es, a mi parecer, una manera super chevere de codear, dado que es igual que las funciones de javascript, e.g:
+
+```js
+// funcion con objeto de parametros
+function sumar( { a, b }){
+  return a + b;
+}
+// objeto
+const val = {a: 3, b: 5}
+
+//opciones para llamar las funcion
+console.log(sumar(val));
+console.log(sumar({a:10, b:5}))
+```
+Para aprender un poco mas acerca de las funciones, y las buenas practicas, visitar el siguiente [link](https://www.youtube.com/watch?v=jmxZrIHPRDg&t=5s).
+
+

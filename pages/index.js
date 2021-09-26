@@ -31,7 +31,7 @@ export default function Home({ posts }) {
               href={`${post.slug}`} 
               className={styles.card}
             >
-              <a>
+              <a className={styles.card}>
                 <h2>{post.title}</h2>
                 <p>{post.date}</p>
               </a>
@@ -81,7 +81,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesMetadata();
-  console.log(posts); 
+  //console.log(posts); 
 
   return {
     props: { posts },
