@@ -1,3 +1,4 @@
+import styles from '../styles/Home.module.css';
 import { MDXRemote } from "next-mdx-remote"; // Esta herramienta convierte el codigo en `source` en codigo JSX para despues convertirlo a HTML
 import { getFileBySlug, getFiles } from "../lib/mdx"
 
@@ -8,7 +9,9 @@ import Layout from "../components/Layout";
 export default function Post({ source, frontmatter }){
     return(
         <Layout>
-            <MDXRemote {...source} components={MDXComponents} /> {/* aqui convierte el codigo de source a LOS COMPONENTES */}
+            <div className={styles.espaciado_left}>
+                <MDXRemote {...source} components={MDXComponents}/> {/* aqui convierte el codigo de source a LOS COMPONENTES */}
+            </div>
         </Layout>
     ) 
 }

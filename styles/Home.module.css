@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 60px;
 }
 
 .main {
@@ -111,6 +112,14 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.espaciado {
+  margin-top: 60px;
+}
+
+.espaciado_left {
+  margin-left: 50px;
 }
 
 @media (max-width: 600px) {

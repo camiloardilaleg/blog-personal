@@ -1,3 +1,4 @@
+import styles from '../styles/Home.module.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
  
 import Link from 'next/link';
@@ -5,7 +6,7 @@ import Link from 'next/link';
 function Layout({ children }) {
     return (
     <div>
-        <Navbar bg="dark" expand="lg" variant="dark">
+        <Navbar fixed="top" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Link href="/" passHref>
                     <Navbar.Brand>
@@ -32,9 +33,11 @@ function Layout({ children }) {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+        </Navbar> <br />
         <div>
-            {children}
+            <div className={styles.espaciado}>
+                {children}
+            </div>
         </div>
     </div>
     )

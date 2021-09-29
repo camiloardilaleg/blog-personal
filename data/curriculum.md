@@ -2,8 +2,6 @@
 title: 'Curriculum Vitae'
 date: '2021-09-27'
 ---
-<br />
-
 # Julian Camilo Ardila Legarda
 
 Economista con seis años de experiencia en gestión y control de carteras de crédito comercial, emisión de informes, evaluación de proyectos productivos (dos meses), analista de datos (un mes) y asistencia contable (2 años). Adicionalmente, tengo conocimientos de machine learning e inteligencia artificial.
@@ -44,6 +42,7 @@ Aprendizaje en áreas clave del proceso de obtención, manejo, transformación e
 - Machine Learning. *Universidad de Stanford a través de la plataforma digital Coursera.* 
 - Introducción a la minería de datos. *Pontificia Universidad Católica de Chile a través de la plataforma digital Coursera.*
 - Introducción al Machine Learning. *Fundación telefónica a través de la plataforma digital MiriadaX.*
+- Javascript. *FreeCodeCamp.*
 - Introducción a la programación. *Platzi.*
 - Git and GitHub.* Platzi.*
 - Programación en Python y SQL. *Capacítate para el empleo. A través de su plataforma virtual https://capacitateparaelempleo.org/*
