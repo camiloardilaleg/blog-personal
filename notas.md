@@ -167,4 +167,6 @@ console.log(sumar({a:10, b:5}))
 ```
 Para aprender un poco mas acerca de las funciones, y las buenas practicas, visitar el siguiente [link](https://www.youtube.com/watch?v=jmxZrIHPRDg&t=5s).
 
+# React-Bootstrap y Link
 
+Para saber como utilizar los Links de NexJs dentro de los componentes de Navbar, visitar el siguiente [Link](https://github.com/react-bootstrap/react-bootstrap/issues/4131)
