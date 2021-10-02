@@ -28,7 +28,7 @@ export default function Home({ posts }) {
             Hola, soy Camilo Ardila. Me gradué como economista, y soy un apasionado por las matemáticas y la programacion.
             <br /> En este blog encontrarás diversos tutoriales, en diferentes lenguajes, sobre ciencia de datos, modelos e inteligencia artificial.
             Así mismo, diferentes tutoriales están dedicamos a narrar mi camino por el mundo de la programación; mis fallos y aciertos, y lo que me hubiera gustado saber antes de comenzar.
-            <br /> Por úttimo, y no me nos importante, está mi curriculum, en donde te digo acerca de mi background.
+            <br /> Por último, y no me nos importante, está mi curriculum, en donde te digo acerca de mi background.
 
           </p>
           {/* Esta es la manera en que estamos mapeando */}

@@ -2,7 +2,7 @@
   "name": "blog-personal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://camiloardilaleg.github.io/",
+  "homepage": "http://camiloardilaleg.github.io/blog-personal",
   "scripts": {
     "predeploy": "next build",
     "deploy": "gh-pages -d out",

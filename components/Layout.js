@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
  
@@ -6,6 +7,10 @@ import Link from 'next/link';
 function Layout({ children }) {
     return (
     <div>
+        <Head>
+          <title>Curriculum: Camilo Ardila</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Navbar fixed="top" bg="dark" expand="lg" variant="dark">
             <Container>
                 <Link href="/" passHref>
