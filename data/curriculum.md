@@ -30,7 +30,7 @@ Aprendizaje en áreas clave del proceso de obtención, manejo, transformación e
     * Análisis financiero
     * Proyecciones
 
-- **GAD Municipio de Ibarra Depto. de Desarrollo Económico Local | Ibarra, Imbabura | Febrero, 2017 | Marzo, 2017 |
+- **GAD Municipio de Ibarra Depto. de Desarrollo Económico Local | Ibarra, Imbabura | Febrero, 2017 | Marzo, 2017 |** <br />
 *Analista de proyectos*
     * Analizar los proyectos productivos de las organizaciones de economía popular y solidaria.
     * Asesorar a los socios de las organizaciones para un buen manejo empresarial.
