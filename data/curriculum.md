@@ -45,6 +45,7 @@ Aprendizaje en áreas clave del proceso de obtención, manejo, transformación e
 - Javascript. *FreeCodeCamp.*
 - Introducción a la programación. *Platzi.*
 - Git and GitHub.* Platzi.*
+- Fundamentos de ingeniería de software. *Platzi.*
 - Programación en Python y SQL. *Capacítate para el empleo. A través de su plataforma virtual https://capacitateparaelempleo.org/*
 - Introducción a la programación en R. *Universidad Autónoma de México a través de la plataforma digital Coursera.*
 
